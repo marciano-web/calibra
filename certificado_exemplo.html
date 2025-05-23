@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado de Calibração</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 21cm;
+            min-height: 29.7cm;
+            padding: 1cm;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .certificate-number {
+            text-align: right;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            border-bottom: 1px solid #999;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .results-table th, .results-table td {
+            text-align: center;
+        }
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #999;
+            padding-top: 10px;
+            font-size: 12px;
+        }
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+        .signature {
+            width: 45%;
+            text-align: center;
+        }
+        .signature-line {
+            border-top: 1px solid #333;
+            margin-top: 40px;
+            padding-top: 5px;
+        }
+        .graph {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>CERTIFICADO DE CALIBRAÇÃO</h1>
+                <p>Laboratório de Metrologia</p>
+            </div>
+            <div>
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="certificate-number">
+            <p><strong>Certificado Nº:</strong> CAL-2025-0001</p>
+            <p><strong>Data de Emissão:</strong> 23/05/2025</p>
+            <p><strong>Páginas:</strong> 1/3</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">1. DADOS DO CLIENTE</h2>
+            <table>
+                <tr>
+                    <td><strong>Nome:</strong></td>
+                    <td>Empresa Exemplo Ltda.</td>
+                    <td><strong>CNPJ:</strong></td>
+                    <td>00.000.000/0001-00</td>
+                </tr>
+                <tr>
+                    <td><strong>Endereço:</strong></td>
+                    <td colspan="3">Rua Exemplo, 123 - Bairro - Cidade/UF - CEP 00000-000</td>
+                </tr>
+                <tr>
+                    <td><strong>Solicitante:</strong></td>
+                    <td>João da Silva</td>
+                    <td><strong>Setor:</strong></td>
+                    <td>Controle de Qualidade</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">2. DADOS DO INSTRUMENTO</h2>
+            <table>
+                <tr>
+                    <td><strong>Instrumento:</strong></td>
+                    <td>Paquímetro Digital</td>
+                    <td><strong>Código:</strong></td>
+                    <td>PAQ-001</td>
+                </tr>
+                <tr>
+                    <td><strong>Fabricante:</strong></td>
+                    <td>Mitutoyo</td>
+                    <td><strong>Modelo:</strong></td>
+                    <td>CD-6"CSX</td>
+                </tr>
+                <tr>
+                    <td><strong>Nº de Série:</strong></td>
+                    <td>12345678</td>
+                    <td><strong>Resolução:</strong></td>
+                    <td>0,01 mm</td>
+                </tr>
+                <tr>
+                    <td><strong>Faixa de Medição:</strong></td>
+                    <td>0 - 150 mm</td>
+                    <td><strong>Erro Máximo Admissível:</strong></td>
+                    <td>± 0,05 mm</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">3. CONDIÇÕES AMBIENTAIS</h2>
+            <table>
+                <tr>
+                    <td><strong>Temperatura:</strong></td>
+                    <td>20,0 ± 0,5 °C</td>
+                    <td><strong>Umidade Relativa:</strong></td>
+                    <td>55 ± 5 %</td>
+                </tr>
+                <tr>
+                    <td><strong>Pressão Atmosférica:</strong></td>
+                    <td>101,3 ± 0,5 kPa</td>
+                    <td><strong>Data da Calibração:</strong></td>
+                    <td>20/05/2025</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">4. PADRÕES UTILIZADOS</h2>
+            <table>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Código</th>
+                    <th>Certificado</th>
+                    <th>Validade</th>
+                    <th>Rastreabilidade</th>
+                </tr>
+                <tr>
+                    <td>Jogo de Blocos Padrão</td>
+                    <td>BP-001</td>
+                    <td>RBC-12345/25</td>
+                    <td>10/01/2026</td>
+                    <td>INMETRO</td>
+                </tr>
+                <tr>
+                    <td>Desempeno de Granito</td>
+                    <td>DG-002</td>
+                    <td>RBC-67890/24</td>
+                    <td>15/03/2026</td>
+                    <td>INMETRO</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">5. PROCEDIMENTO</h2>
+            <p>A calibração foi realizada conforme procedimento PRC-001 Rev.03, baseado nas normas ABNT NBR ISO/IEC 17025:2017 e VIM:2012. O método utiliza blocos padrão como referência para a verificação dos erros de medição em diferentes pontos da faixa de operação do instrumento.</p>
+        </div>
+
+        <div class="footer">
+            <p>Este certificado atende aos requisitos da ABNT NBR ISO/IEC 17025:2017. Os resultados se referem exclusivamente ao instrumento calibrado na data indicada.</p>
+            <p>Este certificado de calibração só pode ser reproduzido integralmente. Reproduções parciais requerem aprovação por escrito do laboratório.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>CERTIFICADO DE CALIBRAÇÃO</h1>
+                <p>Laboratório de Metrologia</p>
+            </div>
+            <div>
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="certificate-number">
+            <p><strong>Certificado Nº:</strong> CAL-2025-0001</p>
+            <p><strong>Data de Emissão:</strong> 23/05/2025</p>
+            <p><strong>Páginas:</strong> 2/3</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">6. RESULTADOS</h2>
+            <table class="results-table">
+                <tr>
+                    <th>Ponto Nominal (mm)</th>
+                    <th>Valor de Referência (mm)</th>
+                    <th>Valor Medido (mm)</th>
+                    <th>Erro (mm)</th>
+                    <th>Incerteza Expandida (mm)</th>
+                    <th>k</th>
+                    <th>Conformidade</th>
+                </tr>
+                <tr>
+                    <td>0,00</td>
+                    <td>0,000</td>
+                    <td>0,002</td>
+                    <td>0,002</td>
+                    <td>0,008</td>
+                    <td>2,00</td>
+                    <td>Conforme</td>
+                </tr>
+                <tr>
+                    <td>25,00</td>
+                    <td>25,000</td>
+                    <td>25,015</td>
+                    <td>0,015</td>
+                    <td>0,010</td>
+                    <td>2,00</td>
+                    <td>Conforme</td>
+                </tr>
+                <tr>
+                    <td>50,00</td>
+                    <td>50,000</td>
+                    <td>50,022</td>
+                    <td>0,022</td>
+                    <td>0,014</td>
+                    <td>2,00</td>
+                    <td>Conforme</td>
+                </tr>
+                <tr>
+                    <td>75,00</td>
+                    <td>75,000</td>
+                    <td>75,018</td>
+                    <td>0,018</td>
+                    <td>0,012</td>
+                    <td>2,00</td>
+                    <td>Conforme</td>
+                </tr>
+                <tr>
+                    <td>100,00</td>
+                    <td>100,000</td>
+                    <td>100,025</td>
+                    <td>0,025</td>
+                    <td>0,016</td>
+                    <td>2,00</td>
+                    <td>Conforme</td>
+                </tr>
+                <tr>
+                    <td>150,00</td>
+                    <td>150,000</td>
+                    <td>150,030</td>
+                    <td>0,030</td>
+                    <td>0,018</td>
+                    <td>2,00</td>
+                    <td>Conforme</td>
+                </tr>
+            </table>
+            
+            <p><strong>Observações:</strong></p>
+            <ul>
+                <li>A incerteza expandida de medição relatada é declarada como a incerteza padrão de medição multiplicada pelo fator de abrangência k, o qual para uma distribuição t com νeff graus de liberdade efetivos corresponde a uma probabilidade de abrangência de aproximadamente 95%.</li>
+                <li>A avaliação da conformidade foi realizada considerando a regra de decisão baseada em aceitação simples, onde o risco específico é menor que 2,5%.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">7. GRÁFICO DE ERROS</h2>
+            <div class="graph">
+                <img src="grafico_erros.png" alt="Gráfico de Erros" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Este certificado atende aos requisitos da ABNT NBR ISO/IEC 17025:2017. Os resultados se referem exclusivamente ao instrumento calibrado na data indicada.</p>
+            <p>Este certificado de calibração só pode ser reproduzido integralmente. Reproduções parciais requerem aprovação por escrito do laboratório.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>CERTIFICADO DE CALIBRAÇÃO</h1>
+                <p>Laboratório de Metrologia</p>
+            </div>
+            <div>
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="certificate-number">
+            <p><strong>Certificado Nº:</strong> CAL-2025-0001</p>
+            <p><strong>Data de Emissão:</strong> 23/05/2025</p>
+            <p><strong>Páginas:</strong> 3/3</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">8. CÁLCULO DE INCERTEZA</h2>
+            <p>A incerteza de medição foi calculada conforme o "Guia para a Expressão da Incerteza de Medição" (GUM).</p>
+            
+            <h3>8.1 Fontes de Incerteza</h3>
+            <table>
+                <tr>
+                    <th>Fonte de Incerteza</th>
+                    <th>Tipo</th>
+                    <th>Distribuição</th>
+                    <th>Valor</th>
+                    <th>Divisor</th>
+                    <th>Incerteza Padrão (mm)</th>
+                </tr>
+                <tr>
+                    <td>Repetibilidade</td>
+                    <td>A</td>
+                    <td>Normal</td>
+                    <td>0,0037</td>
+                    <td>1</td>
+                    <td>0,0037</td>
+                </tr>
+                <tr>
+                    <td>Resolução do instrumento</td>
+                    <td>B</td>
+                    <td>Retangular</td>
+                    <td>0,01</td>
+                    <td>√3</td>
+                    <td>0,0058</td>
+                </tr>
+                <tr>
+                    <td>Incerteza do padrão</td>
+                    <td>B</td>
+                    <td>Normal</td>
+                    <td>0,001</td>
+                    <td>2</td>
+                    <td>0,0005</td>
+                </tr>
+                <tr>
+                    <td>Efeito da temperatura</td>
+                    <td>B</td>
+                    <td>Retangular</td>
+                    <td>0,002</td>
+                    <td>√3</td>
+                    <td>0,0012</td>
+                </tr>
+                <tr>
+                    <td>Erro de paralelismo</td>
+                    <td>B</td>
+                    <td>Retangular</td>
+                    <td>0,003</td>
+                    <td>√3</td>
+                    <td>0,0017</td>
+                </tr>
+            </table>
+            
+            <h3>8.2 Incerteza Combinada</h3>
+            <p>Incerteza combinada (uc): 0,0072 mm</p>
+            
+            <h3>8.3 Graus de Liberdade Efetivos</h3>
+            <p>Graus de liberdade efetivos (νeff): 55</p>
+            
+            <h3>8.4 Fator de Abrangência</h3>
+            <p>Fator de abrangência (k): 2,00 para nível de confiança de 95%</p>
+            
+            <h3>8.5 Incerteza Expandida</h3>
+            <p>Incerteza expandida (U): 0,014 mm</p>
+            
+            <div class="graph">
+                <img src="contribuicoes_incerteza.png" alt="Gráfico de Contribuições de Incerteza" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">9. CONCLUSÃO</h2>
+            <p>O instrumento foi calibrado conforme os procedimentos estabelecidos e os resultados indicam que o mesmo está em conformidade com as especificações do fabricante e com os requisitos metrológicos aplicáveis.</p>
+            <p><strong>Resultado final:</strong> APROVADO</p>
+            <p><strong>Próxima calibração recomendada:</strong> 20/05/2026</p>
+        </div>
+
+        <div class="signatures">
+            <div class="signature">
+                <div class="signature-line">Técnico Responsável</div>
+                <p>Nome: Carlos Técnico</p>
+                <p>Registro: MET-123</p>
+            </div>
+            <div class="signature">
+                <div class="signature-line">Responsável Técnico</div>
+                <p>Nome: Ana Supervisora</p>
+                <p>Registro: RBC-456</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Este certificado atende aos requisitos da ABNT NBR ISO/IEC 17025:2017. Os resultados se referem exclusivamente ao instrumento calibrado na data indicada.</p>
+            <p>Este certificado de calibração só pode ser reproduzido integralmente. Reproduções parciais requerem aprovação por escrito do laboratório.</p>
+            <p>Fim do certificado</p>
+        </div>
+    </div>
+</body>
+</html>
