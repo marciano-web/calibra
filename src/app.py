@@ -23,8 +23,15 @@ def get_db_connection():
     if DATABASE_URL and HAS_POSTGRES:
         # Estamos no Railway, usar PostgreSQL
         conn = psycopg2.connect(DATABASE_URL)
-        conn.cursor_factory = RealDictCursor
+        # Não definir conn.cursor_factory aqui, mas sim ao criar o cursor
         return conn
+    else:
+        # Estamos local, usar SQLite
+        sqlite_db = os.path.join(os.path.dirname(__file__), 'database', 'calibracao.db')
+        conn = sqlite3.connect(sqlite_db)
+        conn.row_factory = sqlite3.Row
+        return conn
+
     else:
         # Estamos local, usar SQLite
         sqlite_db = os.path.join(os.path.dirname(__file__), 'database', 'calibracao.db')
